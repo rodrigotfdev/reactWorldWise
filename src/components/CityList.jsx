@@ -6,10 +6,12 @@ import Message from "./Message";
 
 export default function CityList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
-  if (!cities.lenght)
-    return (
-      <Message message="Add your first city by clicking on a city on the map" />
-    );
+  // if (!cities.lenght)
+  //   return (
+  //     <Message message="Add your first city by clicking on a city on the map" />
+  //   );
+
+  const countries = []
 
   return (
     <ul className={styles.cityList}>
